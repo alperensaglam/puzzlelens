@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>App Review test images — PuzzleLens</title>
+<style>
+  :root { color-scheme: light dark; --accent:#2e6be6; --bg:#f8f9fb; --fg:#111318; --muted:#5b6170; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#101218; --fg:#eef1f6; --muted:#a2a9b8; --card:#181b23; } }
+  * { box-sizing:border-box }
+  body { margin:0; font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+         background:var(--bg); color:var(--fg); }
+  .wrap { max-width:680px; margin:0 auto; padding:56px 20px 72px }
+  h1 { font-size:2.4rem; margin:0 0 .2em; letter-spacing:-.02em }
+  .sub { color:var(--muted); font-size:1.15rem; margin:0 0 2.2em }
+  h2 { font-size:1.15rem; margin:2.2em 0 .5em }
+  p { margin:0 0 1em }
+  a { color:var(--accent) }
+  .card { background:var(--card); border-radius:16px; padding:20px 22px; margin:1em 0 }
+  footer { color:var(--muted); font-size:.9rem; margin-top:3em; border-top:1px solid #8883; padding-top:1.2em }
+</style>
+<style>
+  figure { margin:1em 0 }
+  img { max-width:100%; border-radius:12px; display:block }
+  figcaption { color:var(--muted); font-size:.95rem; margin-top:.4em }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:14px }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Test images</h1>
+<p class="sub">For App Review — no physical jigsaw puzzle needed.</p>
+<div class="card">
+  Save these images to the device's Photos, then in PuzzleLens:
+  <ol>
+    <li><strong>New puzzle → Choose from Photos</strong> → <code>reference.jpg</code>.
+        Keep the corners at the image edges; piece count <strong>500</strong>.</li>
+    <li><strong>Scan piece → Choose from Photos</strong> → any <code>piece-0N.jpg</code>.</li>
+  </ol>
+  These images are procedurally generated and pass through the same distortions
+  as a real photo. When the app is not confident it shows a <em>region</em>
+  instead of a single cell — that is intended behavior.
+</div>
+<h2>Puzzle picture</h2>
+<figure><a href="reference.jpg"><img src="reference.jpg" alt="Reference picture"></a>
+<figcaption><a href="reference.jpg">reference.jpg</a> — grid 28 × 18 (504 pieces, sold as “500”)</figcaption></figure>
+<h2>Pieces</h2>
+<div class="grid">
+  <figure><a href="piece-01.jpg"><img src="piece-01.jpg" alt="Piece 1"></a><figcaption><a href="piece-01.jpg">piece-01.jpg</a> — expected: row 10, column 5</figcaption></figure>
+  <figure><a href="piece-02.jpg"><img src="piece-02.jpg" alt="Piece 2"></a><figcaption><a href="piece-02.jpg">piece-02.jpg</a> — expected: row 14, column 22</figcaption></figure>
+  <figure><a href="piece-03.jpg"><img src="piece-03.jpg" alt="Piece 3"></a><figcaption><a href="piece-03.jpg">piece-03.jpg</a> — expected: row 2, column 26</figcaption></figure>
+  <figure><a href="piece-04.jpg"><img src="piece-04.jpg" alt="Piece 4"></a><figcaption><a href="piece-04.jpg">piece-04.jpg</a> — expected: row 16, column 15</figcaption></figure>
+  <figure><a href="piece-05.jpg"><img src="piece-05.jpg" alt="Piece 5"></a><figcaption><a href="piece-05.jpg">piece-05.jpg</a> — expected: row 17, column 14</figcaption></figure>
+</div>
+<footer><a href="../">PuzzleLens</a></footer>
+</div>
+</body>
+</html>
