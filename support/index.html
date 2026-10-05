@@ -1,29 +1,50 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-title-tr="Destek · PuzzleLens" data-title-en="Support · PuzzleLens">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Destek — PuzzleLens</title>
-<style>
-  :root { color-scheme: light dark; --accent:#2e6be6; --bg:#f8f9fb; --fg:#111318; --muted:#5b6170; --card:#fff; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#101218; --fg:#eef1f6; --muted:#a2a9b8; --card:#181b23; } }
-  * { box-sizing:border-box }
-  body { margin:0; font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
-         background:var(--bg); color:var(--fg); }
-  .wrap { max-width:680px; margin:0 auto; padding:56px 20px 72px }
-  h1 { font-size:2.4rem; margin:0 0 .2em; letter-spacing:-.02em }
-  .sub { color:var(--muted); font-size:1.15rem; margin:0 0 2.2em }
-  h2 { font-size:1.15rem; margin:2.2em 0 .5em }
-  p { margin:0 0 1em }
-  a { color:var(--accent) }
-  .card { background:var(--card); border-radius:16px; padding:20px 22px; margin:1em 0 }
-  footer { color:var(--muted); font-size:.9rem; margin-top:3em; border-top:1px solid #8883; padding-top:1.2em }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Destek · PuzzleLens</title>
+  <meta name="description" content="PuzzleLens destek ve sık sorulanlar. PuzzleLens support and FAQ.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="/assets/apps/puzzlelens-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apps/puzzlelens-icon.png">
+  <link rel="preload" href="/assets/fonts/mona-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js"></script>
 </head>
-<body>
-<div class="wrap">
+<body class="app-puzzlelens">
+<a class="skip" href="#content"><span data-lang="tr">İçeriğe geç</span><span data-lang="en">Skip to content</span></a>
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="/">Alperen Sağlam</a>
+    <span class="crumb-sep" aria-hidden="true"></span>
+    <a class="brand-app" href="/puzzlelens/"><img src="/assets/apps/puzzlelens-icon.png" alt="" width="28" height="28"><span>PuzzleLens</span></a>
+    <nav class="nav" aria-label="Menü">
+      <a class="nav-wide" href="/#apps"><span data-lang="tr">Tüm uygulamalar</span><span data-lang="en">All apps</span></a>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <button type="button" data-set="tr" aria-pressed="true">TR</button>
+        <button type="button" data-set="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="tabs-wrap">
+  <div class="app-hero">
+    <div class="app-hero-in">
+      <img class="icon" src="/assets/apps/puzzlelens-icon.png" alt="" width="88" height="88">
+      <div class="titles">
+        <div class="app-name">PuzzleLens</div>
+        <p class="tagline"><span data-lang="tr">Yapboz parçasının yerini bul</span><span data-lang="en">Find where the piece goes</span></p>
+      </div>
+      <a class="badge" href="https://apps.apple.com/app/id6812349555"><img src="/assets/badges/app-store-en.svg" alt="App Store'dan indir / Download on the App Store" width="132" height="44"></a>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="PuzzleLens"><a href="/puzzlelens/"><span data-lang="tr">Nasıl kullanılır</span><span data-lang="en">How to use</span></a><a href="/puzzlelens/support/" aria-current="page"><span data-lang="tr">Destek</span><span data-lang="en">Support</span></a><a href="/puzzlelens/privacy/"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span></a></nav>
+</div>
+<main class="doc" id="content">
+<div data-lang="tr" lang="tr">
 <h1>Destek</h1>
-<p class="sub">Sorun, öneri ya da hata bildirimi.</p>
+<p class="lede">Sorun, öneri ya da hata bildirimi.</p>
 <div class="card">
   <strong>E-posta:</strong> <a href="mailto:alperensaglam177@gmail.com">alperensaglam177@gmail.com</a>
   <p style="margin:.6em 0 0">Genellikle 24 saat içinde dönüş yapıyorum.</p>
@@ -43,7 +64,30 @@ bulduğu yerleşimleri onayladıkça uygulama o yapboza kalibre oluyor ve
 isabetleniyor.</p>
 <p><strong>Hesabımı nasıl silerim?</strong><br>
 Arkadaşlar → Ayarlar → Hesabımı sil. Kalıcıdır.</p>
-<footer><a href="../">← PuzzleLens</a> · © 2026 Alperen Sağlam</footer>
 </div>
+<div data-lang="en" lang="en">
+<h1>Support</h1>
+<p class="lede">Problems, ideas or bug reports.</p>
+<div class="card">
+  <strong>Email:</strong> <a href="mailto:alperensaglam177@gmail.com">alperensaglam177@gmail.com</a>
+  <p style="margin:.6em 0 0">I usually reply within 24 hours.</p>
+</div>
+<h2>FAQ</h2>
+<h3>It can't find where my piece goes. What should I do?</h3>
+<p>Put the piece on a flat, single-colour surface and hold the phone parallel to the table. Make sure no shadow falls on it. In flat-coloured areas of a puzzle (sky, water) finding a single cell may be mathematically impossible; in those cases the app shows an area.</p>
+<h3>The grid came out wrong.</h3>
+<p>The piece count on the box is a marketing number; "1000" is usually 1026. During setup, count the pieces along the long edge and enter that so the grid is exact.</p>
+<h3>The first scans are off.</h3>
+<p>The box picture is not exactly the same frame as the puzzle's own picture. As you confirm placements it got right, the app calibrates to that puzzle and gets more accurate.</p>
+<h3>How do I delete my account?</h3>
+<p>Friends → Settings → Delete my account. It is permanent.</p>
+</div>
+</main>
+<footer class="foot">
+  <span>© 2026 Alperen Sağlam</span>
+  <span class="spacer"></span>
+  <a href="/"><span data-lang="tr">Tüm uygulamalar</span><span data-lang="en">All apps</span></a>
+  <a href="mailto:alperensaglam177@gmail.com"><span data-lang="tr">E-posta</span><span data-lang="en">Email</span></a>
+</footer>
 </body>
 </html>

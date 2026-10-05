@@ -1,31 +1,50 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-title-tr="Nasıl kullanılır · PuzzleLens" data-title-en="How to use · PuzzleLens">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PuzzleLens</title>
-<style>
-  :root { color-scheme: light dark; --accent:#2e6be6; --bg:#f8f9fb; --fg:#111318; --muted:#5b6170; --card:#fff; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#101218; --fg:#eef1f6; --muted:#a2a9b8; --card:#181b23; } }
-  * { box-sizing:border-box }
-  body { margin:0; font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
-         background:var(--bg); color:var(--fg); }
-  .wrap { max-width:680px; margin:0 auto; padding:56px 20px 72px }
-  h1 { font-size:2.4rem; margin:0 0 .2em; letter-spacing:-.02em }
-  .sub { color:var(--muted); font-size:1.15rem; margin:0 0 2.2em }
-  h2 { font-size:1.15rem; margin:2.2em 0 .5em }
-  p { margin:0 0 1em }
-  a { color:var(--accent) }
-  .card { background:var(--card); border-radius:16px; padding:20px 22px; margin:1em 0 }
-  footer { color:var(--muted); font-size:.9rem; margin-top:3em; border-top:1px solid #8883; padding-top:1.2em }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nasıl kullanılır · PuzzleLens</title>
+  <meta name="description" content="PuzzleLens: yapboz parçasının yerini bul. Nasıl kullanılır. PuzzleLens: find where a jigsaw piece goes. How to use.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="/assets/apps/puzzlelens-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apps/puzzlelens-icon.png">
+  <link rel="preload" href="/assets/fonts/mona-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js"></script>
 </head>
-<body>
-<div class="wrap">
-  <h1>PuzzleLens</h1>
-  <p class="sub">Yapboz parçasının yerini bul.</p>
-
-  <p>Yapbozun resmini bir kez tarıyorsun; sonra takıldığın her parçanın
+<body class="app-puzzlelens">
+<a class="skip" href="#content"><span data-lang="tr">İçeriğe geç</span><span data-lang="en">Skip to content</span></a>
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="/">Alperen Sağlam</a>
+    <span class="crumb-sep" aria-hidden="true"></span>
+    <a class="brand-app" href="/puzzlelens/"><img src="/assets/apps/puzzlelens-icon.png" alt="" width="28" height="28"><span>PuzzleLens</span></a>
+    <nav class="nav" aria-label="Menü">
+      <a class="nav-wide" href="/#apps"><span data-lang="tr">Tüm uygulamalar</span><span data-lang="en">All apps</span></a>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <button type="button" data-set="tr" aria-pressed="true">TR</button>
+        <button type="button" data-set="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="tabs-wrap">
+  <div class="app-hero">
+    <div class="app-hero-in">
+      <img class="icon" src="/assets/apps/puzzlelens-icon.png" alt="" width="88" height="88">
+      <div class="titles">
+        <div class="app-name">PuzzleLens</div>
+        <p class="tagline"><span data-lang="tr">Yapboz parçasının yerini bul</span><span data-lang="en">Find where the piece goes</span></p>
+      </div>
+      <a class="badge" href="https://apps.apple.com/app/id6812349555"><img src="/assets/badges/app-store-en.svg" alt="App Store'dan indir / Download on the App Store" width="132" height="44"></a>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="PuzzleLens"><a href="/puzzlelens/" aria-current="page"><span data-lang="tr">Nasıl kullanılır</span><span data-lang="en">How to use</span></a><a href="/puzzlelens/support/"><span data-lang="tr">Destek</span><span data-lang="en">Support</span></a><a href="/puzzlelens/privacy/"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span></a></nav>
+</div>
+<main class="doc" id="content">
+<div data-lang="tr" lang="tr">
+<h1>Nasıl kullanılır</h1>
+<p>Yapbozun resmini bir kez tarıyorsun; sonra takıldığın her parçanın
   fotoğrafını çekiyorsun ve uygulama sana yerini söylüyor. İstersen sadece
   bölgeyi, istersen tam hücreyi ve parçanın hangi yöne döneceğini.</p>
 
@@ -39,14 +58,39 @@
     parçalar tek başına ayırt edilemez. Uydurma bir cevap vermek yerine sana bir
     bölge gösteriyor.
   </div>
-
-  <h2>Bağlantılar</h2>
-  <p>
-    <a href="privacy/">Gizlilik politikası</a> ·
-    <a href="support/">Destek</a>
-  </p>
-
-  <footer>© 2026 Alperen Sağlam</footer>
+<h2>Adım adım</h2>
+<ol class="steps">
+  <li><strong>Yapbozun resmini tara.</strong> Kutudaki resmi bir kez tara.</li>
+  <li><strong>Izgarayı kur.</strong> Kutudaki parça sayısı yuvarlanmış bir rakamdır; uzun kenardaki parçaları sayıp gir, ızgara kesinleşsin.</li>
+  <li><strong>Takıldığın parçanın fotoğrafını çek.</strong> Parçayı düz ve tek renk bir zemine koy, telefonu masaya paralel tut, gölge düşmesin.</li>
+  <li><strong>İpucunu seç.</strong> Yalnızca bölgeyi, tam hücreyi ya da parçanın hangi yöne döneceğini gör. Doğru bulduğu yerleşimleri onayladıkça uygulama o yapboza alışır.</li>
+</ol>
+<p><a href="support/">Sık sorulanlar ve destek</a></p>
 </div>
+<div data-lang="en" lang="en">
+<h1>How to use</h1>
+<p>Scan the puzzle's picture once; then photograph any piece you're stuck on and the app tells you where it goes. Just the area if you like, or the exact cell and which way the piece turns.</p>
+<div class="card">
+  <strong>Everything stays on your device.</strong> Piece recognition runs entirely on your iPhone. No internet needed; your photos go nowhere.
+</div>
+<div class="card">
+  <strong>It tells you when it isn't sure.</strong> In flat areas like the sky some pieces can't be told apart on their own. Instead of making up an answer, it shows you an area.
+</div>
+<h2>Step by step</h2>
+<ol class="steps">
+  <li><strong>Scan the puzzle's picture.</strong> Scan the picture on the box once.</li>
+  <li><strong>Set up the grid.</strong> The piece count on the box is a rounded number; count the pieces along the long edge and enter it so the grid is exact.</li>
+  <li><strong>Photograph the piece you're stuck on.</strong> Put it on a flat, single-colour surface, hold the phone parallel to the table and keep shadows off it.</li>
+  <li><strong>Choose your hint.</strong> See just the area, the exact cell, or which way the piece turns. As you confirm placements it got right, the app calibrates to that puzzle.</li>
+</ol>
+<p><a href="support/">FAQ and support</a></p>
+</div>
+</main>
+<footer class="foot">
+  <span>© 2026 Alperen Sağlam</span>
+  <span class="spacer"></span>
+  <a href="/"><span data-lang="tr">Tüm uygulamalar</span><span data-lang="en">All apps</span></a>
+  <a href="mailto:alperensaglam177@gmail.com"><span data-lang="tr">E-posta</span><span data-lang="en">Email</span></a>
+</footer>
 </body>
 </html>
